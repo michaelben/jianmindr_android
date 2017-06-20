@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:orientation="vertical" >
+
+            <com.jianmindr.view.SelectableRoundedImageView
+                android:id="@+id/img_head"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/avatar_1"
+                app:sriv_left_bottom_corner_radius="26dp"
+                app:sriv_left_top_corner_radius="26dp"
+                app:sriv_right_bottom_corner_radius="26dp"
+                app:sriv_right_top_corner_radius="26dp"/>
+
+            <RatingBar
+                android:layout_marginTop="3dp"
+                android:id="@+id/rate_driver"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:rating="0"
+                android:stepSize="0.5"
+                android:numStars="5"
+                android:isIndicator="true"
+                android:progressDrawable="@drawable/food_rating_bar_full" />
+
+            <TextView
+                android:id="@+id/dialog_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginBottom="4dp"
+                android:text="d"
+                android:gravity="center"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#c4cccccc" />
+
+        <LinearLayout
+            android:id="@+id/update_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="1dp" >
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#c4cccccc" />
+
+            <TextView
+                android:id="@+id/positive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

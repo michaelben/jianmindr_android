@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="20dp"
+    android:paddingRight="13dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/item_overlay_bg">
+
+    <com.jianmindr.view.SelectableRoundedImageView
+        android:id="@+id/item_overlay_img"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/avatar_1"
+        app:sriv_left_bottom_corner_radius="26dp"
+        app:sriv_left_top_corner_radius="26dp"
+        app:sriv_right_bottom_corner_radius="26dp"
+        app:sriv_right_top_corner_radius="26dp"/>
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/item_overlay_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="康师傅"
+            android:textSize="15sp"
+            android:textColor="@color/text_black"/>
+
+        <TextView
+            android:id="@+id/item_overlay_no"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="BJ342458"
+            android:textSize="12sp"
+            android:textColor="#f666"/>
+
+        <RatingBar
+            android:id="@+id/rate_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:rating="0"
+            android:stepSize="0.5"
+            android:numStars="5"
+            android:isIndicator="true"
+            android:progressDrawable="@drawable/food_rating_bar_full" />
+
+    </LinearLayout>
+</LinearLayout>
